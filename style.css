@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
+*{
+  margin: 0px;
+  padding:0px;
+}
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+}
+.container{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 12px 25px black;
+  border-radius: 120px;
+  height: 180px;
+  width: 580px;
+   animation: floatImage 1.5s ease-in-out infinite;
+}
+#time{
+  font-size: 50px;
+  font-family: 'Roboto Mono', monospace;
+   background: -webkit-linear-gradient(#ba5370, #f4e2d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#date{
+  position: relative;
+  top: 8px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+   background: -webkit-linear-gradient(#ba5370, #f4e2d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
